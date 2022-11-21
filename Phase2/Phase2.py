@@ -1,18 +1,13 @@
 
-#   Student Name
-#   CIS261
-#   Project Phase 2
+#   Kye Lowmon CIS261 project Phase 2
 def GetEmpName():
     empname = input("Enter employee name (END to terminate): ")
     return empname
 def GetDatesWorked():
-    #write the code to input fromdate and todate and return the values from the function.  
-    #Prompt the user for the dates in the following format: mm/dd/yyyy
-    #no validations are needed for this input, we will assume the dates are entered correctly
-
-
-
-
+    fromdate = input("Enter employee pay-cycle start date (mm/dd/yyyy): ")
+    return fromdate
+    todate = input("Enter employee pay-cycle end date (mm/dd/yyyy): ")
+    return todate
 def GetHoursWorked():
     hours = float(input('Enter amount of hours worked:  '))
     return hours
@@ -40,6 +35,7 @@ def printinfo(EmpDetailList):
     # the following code creates a for loop to read through EmpDetailList and assign values in list to variables
     for EmpList in EmpDetailList:
         fromdate = EmpList[0]
+        todate
         #write code to assign values to todate, empname, hours, hourlyrate, and taxrate from EmpLst
 
 
@@ -88,7 +84,7 @@ if __name__ == "__main__":
     #TotNetPay = 0.00
 
     #create empty list and dictionary
-    EmpDetailList = []
+    EmpDetailList = ['fromdate', 'todate', 'empname', 'hours', 'hourlyrate', 'taxrate' ]
     EmpTotals = {}
     while True:
         empname = GetEmpName()
